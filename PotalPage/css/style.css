@@ -154,12 +154,13 @@ main select {
 
 .screen1 {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .screen1-line1 {
   margin-left: 20px;
   margin-top: 40px;
-  display: none;
 }
 
 .screen1-line1 span {
