@@ -159,7 +159,7 @@ main select {
 .screen1-line1 {
   margin-left: 20px;
   margin-top: 40px;
-  display: none
+  display: none;
 }
 
 .screen1-line1 span {
@@ -174,8 +174,12 @@ main select {
 }
 
 .screen1-line2 {
+  display:flex;
+  /* justify-content:center; */
+  align-items:center;
   margin-left: 20px;
   margin-top: 30px;
+  position:relative;
 }
 
 .screen1-line2 span {
@@ -186,18 +190,20 @@ main select {
 }
 
 .screen1-line2 input {
-  margin-left: 75px;
+  margin-left: 148px;
   width: 229px;
   height: 25px;
   background:rgba(255,255,255,1);
   border:0.5px solid rgba(204, 204, 204, 1);
   border-radius:1px;
   outline: none;
+  position:absolute;
 }
 
 .screen1-line3 {
   margin-left: 20px;
   margin-top: 30px;
+  display: flex;
 }
 
 .screen1-line3 span {
@@ -209,13 +215,13 @@ main select {
 }
 
 
-.screen1-line3 img {
+/* .screen1-line3 img {
   margin-left: 73.5px;
   width:229px;
   height:100px;
   background:rgba(242,242,242,1);
   border-radius:1px;
-}
+} */
 
 .screen1-line5 {
   margin-left: 20px;
@@ -223,6 +229,7 @@ main select {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position:relative;
 }
 
 .screen1-line5 span {
@@ -233,8 +240,15 @@ main select {
   vertical-align: top;
 }
 
+.line5 {
+  display:flex;
+  /* justify-content:center; */
+  align-items:center;
+  position:absolute;
+}
+
 .screen1-line5 input {
-  margin-left: 48px;
+  margin-left: 148px;
   width: 509px;
   height: 25px;
   background:rgba(255,255,255,1);
@@ -275,7 +289,7 @@ main select {
 }
 
 .screen1-line6 input {
-  margin-left: 152px;
+  margin-left: 148px;
   width: 509px;
   height: 25px;
   background:rgba(255,255,255,1);
@@ -314,6 +328,7 @@ main select {
   display: flex;
   justify-content: flex-start;
   /* align-items: center; */
+  position:relative;
 }
 
 .screen1-line7 span {
@@ -329,6 +344,8 @@ main select {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position:absolute;
+  margin-left: 148px;
 }
 
 .line7 div {
@@ -337,7 +354,7 @@ main select {
   justify-content: flex-start;
   align-items: center;
   margin-top: 15px;
-  margin-left: 62.5px;
+  /* margin-left: 62.5px; */
   width: 100px;
 }
 
@@ -352,10 +369,11 @@ main select {
 
 .screen1-line8 {
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: 96px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position:relative;
 }
 
 .screen1-line8 span {
@@ -372,7 +390,8 @@ main select {
   background: rgba(255,255,255,1);
   border: 0.5px solid rgba(204, 204, 204, 1);
   border-radius: 1px;
-  margin-left: 12px;
+  margin-left: 148px;
+  position:absolute;
 }
 
 .edit {
@@ -380,7 +399,7 @@ main select {
   display: flex;
   align-items: center;
   justify-content: center;  
-  margin-top: 50px;
+  margin-top: 66px;
 }
 
 .edit span {
@@ -395,4 +414,35 @@ main select {
   border-radius:2px;
   line-height: 30px;
   text-align: center;
+}
+
+.imagePicker{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* border-radius:50%; */
+  /* border:1px solid #CCCCCC; */
+  /* overflow:hidden; 
+  box-shadow:inset 0 03px rgba(0,0,0,0.5); */
+  position:relative;
+  margin-left: 74px;
+  width:229px;
+  height:100px;
+  background:rgba(242,242,242,1);
+  border-radius:1px;
+}
+
+.imagePicker img{
+  width:100%;
+  height:100%;
+  vertical-align:top;
+}
+.imagePicker input[type=file]{
+  position:absolute;
+  background:red;
+  height: 100px;
+  top:0;
+  left:0;
+  opacity:0;
+  z-index:1;
 }

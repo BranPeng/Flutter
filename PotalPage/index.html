@@ -66,21 +66,25 @@
                 </div>
                 <div class="screen1-line3">
                   <span>Screen Image</span>
-                  <img src="image/add2.png">
+                  <div class="imagePicker">
+                    <img src="image/add2.png">
+                    <input id="imageinput" type="file">
+                  </div>
+                  
                 </div>
                 <div class="screen1-line2">
                   <span>Screen Header</span>
-                  <input style="margin-left: 67px;">
+                  <input>
                 </div>
                 <div class="screen1-line2">
                   <span>Screen Tag Line</span>
-                  <input style="margin-left: 62px;">
+                  <input>
                 </div>
                 <div class="screen1-line5">
                     <span>Feature Description</span>
-                    <input>
+                    
                     <div class="line5">
-                        
+                        <input>
                         <div class="delete">
                             <img src="image/delete.png">
                             <span>Delete</span>
@@ -126,58 +130,65 @@
                 </div>
             </div>
             <div class="screen1">
-                <div class="screen1-line1">
-                  <span>Hero Screen Behavior</span>
-                  <input type="radio" checked ="checked" name="2" value="static"><span style="margin-left: 10px;">Static</span>
-                  <input type="radio" name="2" value="dynamic"><span style="margin-left: 10px;">Dynamic</span>
-                </div>
-                <div class="screen1-line2">
-                  <span>Screen Name</span>
-                  <input>
-                </div>
-                <div class="screen1-line3">
-                  <span>Screen Image</span>
+              <div class="screen1-line1">
+                <span>Hero Screen Behavior</span>
+                <input type="radio" checked ="checked" name="2" value="static"><span style="margin-left: 10px;">Static</span>
+                <input type="radio" name="2" value="dynamic"><span style="margin-left: 10px;">Dynamic</span>
+              </div>
+              <div class="screen1-line2">
+                <span>Screen Name</span>
+                <input>
+              </div>
+              <div class="screen1-line3">
+                <span>Screen Image</span>
+                <div class="imagePicker">
                   <img src="image/add2.png">
+                  <input id="imageinput" type="file">
                 </div>
-                <div class="screen1-line2">
-                  <span>Screen Header</span>
-                  <input style="margin-left: 67px;">
-                </div>
-                <div class="screen1-line2">
-                  <span>Screen Tag Line</span>
-                  <input style="margin-left: 62px;">
-                </div>
-                <div class="screen1-line5">
-                    <span>Button Text</span>
-                    <input style="margin-left: 92px;">
-                </div>
-                <div class="screen1-line7">
-                    <span>Associate Roles</span>
-                    <div class="line7">
-                        <div>
-                            <input type="checkbox" name="favorite" value="1" /> <span>All</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="favorite" value="2" /> <span>Manager</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="favorite" value="3" /> <span>Associate</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="screen1-line8">
-                    <span>Club Specific(MARKETS)</span>
-                    <select>
-                      <option selected="selected" value="1">ComboBox</option>
-                      <option value="2">CLAIMS</option>
-                      <option value="3">RECEIVING</option>
-                      <option value="4">ONE APP</option>
-                    </select>
-                </div>
-                <div class="edit">
-                  <span>EDIT</span>
-                </div>
-            </div>
+                
+              </div>
+              <div class="screen1-line2">
+                <span>Screen Header</span>
+                <input>
+              </div>
+              <div class="screen1-line2">
+                <span>Screen Tag Line</span>
+                <input>
+              </div>
+              <div class="screen1-line5">
+                  <span>Button Text</span>
+                  
+                  <div class="line5">
+                      <input>
+                  </div>
+              </div>
+              <div class="screen1-line7">
+                  <span>Associate Roles</span>
+                  <div class="line7">
+                      <div>
+                          <input type="checkbox" name="favorite" value="1" /> <span>All</span>
+                      </div>
+                      <div>
+                          <input type="checkbox" name="favorite" value="2" /> <span>Manager</span>
+                      </div>
+                      <div>
+                          <input type="checkbox" name="favorite" value="3" /> <span>Associate</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="screen1-line8">
+                  <span>Club Specific(MARKETS)</span>
+                  <select>
+                    <option selected="selected" value="1">ComboBox</option>
+                    <option value="2">CLAIMS</option>
+                    <option value="3">RECEIVING</option>
+                    <option value="4">ONE APP</option>
+                  </select>
+              </div>
+              <div class="edit">
+                <span>EDIT</span>
+              </div>
+          </div>
             <div style="display: none">我是内容3</div>
             <div style="display: none">我是内容4</div>
           </div>
@@ -232,10 +243,4 @@
             }
         }
     }
-
-    $('#cc').combobox({
-                        url:'combobox_data.json',
-                        valueField:'id',
-                        textField:'text'
-                    });
 </script>
