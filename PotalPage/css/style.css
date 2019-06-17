@@ -1,0 +1,398 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+
+#header 
+{ 
+  width: 100%; 
+  height: 80px; 
+  background: white; 
+  position: relative;
+}
+
+.logo { 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 53px;
+  width: 105px;
+  height: 24px;
+}
+
+.header-title {
+  font-size:15px;
+  font-family:Chalkboard;
+  font-weight:400;
+  color:rgba(40,39,39,1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 166px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 94px;
+  align-items:center;/*垂直居中*/
+}
+
+main p {
+  font-size:13px;
+  font-family:ArialMT;
+  font-weight:400;
+  color:rgba(66,66,66,1);
+}
+
+main select {
+  width:158px;
+  height:29px;
+  background:rgba(255,255,255,1);
+  border:1px solid rgba(204, 204, 204, 1);
+  border-radius:2px;
+  margin-left: 16px;
+  font-size:13px;
+  font-family:ArialMT;
+  font-weight:400;
+  color:rgba(66,66,66,1);
+  /* appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; */
+}
+
+.top-title {
+  margin-left: 46px;
+}
+
+#mySelect {
+  width:253px;
+}
+
+#content-box {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.add {
+  width: 17px;
+  height: 17px;
+}
+
+.notice-tit{
+  height: 30px;
+  background-color: #E6E6E6;
+  position: relative;
+}
+.notice-tit ul{
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  font-size:13px;
+  font-family:ArialMT;
+  font-weight:400;
+  background:rgba(230,230,230,1);
+}
+
+.notice-tit ul li{
+  float: left;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 0.5px solid rgba(204,204,204,1);
+}
+.notice-tit ul a{
+  text-decoration: none;
+  display: block;
+  color:rgba(66,66,66,1);
+}
+
+.notice-tit ul li:last-child
+{
+    /* background:pink; */
+    width: 37px;
+    height: 30px;
+    border-right: 0.5px solid rgba(230,230,230,1);
+}
+
+.notice-tit ul .select{
+  background-color: white;
+  font-size:13px;
+  font-family:Arial-BoldMT;
+  font-weight:bold;
+}
+
+.notice-tit ul .select a {
+  color:rgba(25,119,211,1);
+}
+
+.notice-con {
+  width: 100%;
+  height: 966px;
+  background-color: white;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.notice-con table {
+  padding-left: 20px;
+}
+
+.notice-con table tr td {
+  font-size:12px;
+  font-family:ArialMT;
+  font-weight:400;
+  color:rgba(66,66,66,1);
+}
+
+.screen1 {
+  overflow: hidden;
+}
+
+.screen1-line1 {
+  margin-left: 20px;
+  margin-top: 40px;
+  display: none
+}
+
+.screen1-line1 span {
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color: rgba(66,66,66,1);
+}
+
+.screen1-line1 input {
+  margin-left: 30px;
+}
+
+.screen1-line2 {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.screen1-line2 span {
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color: rgba(66,66,66,1);
+}
+
+.screen1-line2 input {
+  margin-left: 75px;
+  width: 229px;
+  height: 25px;
+  background:rgba(255,255,255,1);
+  border:0.5px solid rgba(204, 204, 204, 1);
+  border-radius:1px;
+  outline: none;
+}
+
+.screen1-line3 {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.screen1-line3 span {
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color: rgba(66,66,66,1);
+  vertical-align: top;
+}
+
+
+.screen1-line3 img {
+  margin-left: 73.5px;
+  width:229px;
+  height:100px;
+  background:rgba(242,242,242,1);
+  border-radius:1px;
+}
+
+.screen1-line5 {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.screen1-line5 span {
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color: rgba(66,66,66,1);
+  vertical-align: top;
+}
+
+.screen1-line5 input {
+  margin-left: 48px;
+  width: 509px;
+  height: 25px;
+  background:rgba(255,255,255,1);
+  border:0.5px solid rgba(204, 204, 204, 1);
+  border-radius:1px;
+  outline: none;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 71px;
+  height: 25px;
+  background-color:  rgba(235,13,0,1);
+  border-radius: 2px;
+  margin-left: 10px;
+}
+.delete img{
+  width: 9px;
+  height: 11px;
+}
+
+.delete span {
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color: rgba(255,255,255,1);
+  margin-left: 8px;
+}
+
+.screen1-line6 {
+  margin-left: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.screen1-line6 input {
+  margin-left: 152px;
+  width: 509px;
+  height: 25px;
+  background:rgba(255,255,255,1);
+  border:0.5px solid rgba(204, 204, 204, 1);
+  border-radius:1px;
+  outline: none;
+}
+
+.add-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 71px;
+  height: 25px;
+  background:rgba(255,255,255,1);
+  border:0.5px solid rgba(25, 119, 211, 1);
+  border-radius:2px;
+  margin-left: 10px;
+}
+.add-screen img{
+  width: 11px;
+  height: 11px;
+}
+
+.add-screen span {
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color:rgba(25,119,211,1);
+  margin-left: 9px;
+}
+
+.screen1-line7 {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+
+.screen1-line7 span {
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color: rgba(66,66,66,1);
+  vertical-align: top;
+}
+
+.line7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.line7 div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 62.5px;
+  width: 100px;
+}
+
+.line7 div:first-child
+{ 
+  margin-top: 0px;
+}
+
+.line7 div span {
+  margin-left: 10.5px;
+}
+
+.screen1-line8 {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.screen1-line8 span {
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color: rgba(66,66,66,1);
+  vertical-align: top;
+}
+
+.screen1-line8 select { 
+  width: 229px;
+  height: 25px;
+  background: rgba(255,255,255,1);
+  border: 0.5px solid rgba(204, 204, 204, 1);
+  border-radius: 1px;
+  margin-left: 12px;
+}
+
+.edit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 50px;
+}
+
+.edit span {
+  height: 30px;
+  font-size: 12px;
+  font-family: ArialMT;
+  font-weight: 400;
+  color: rgba(255,255,255,1);
+
+  width: 71px;
+  background:rgba(25,119,211,1);
+  border-radius:2px;
+  line-height: 30px;
+  text-align: center;
+}
