@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>超出部分隐藏滚动条</title>
+</head>
+<style type="text/css">
+    #box {
+        width: 90%;
+        height: 300px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        line-height: 30px;
+        text-align: center;
+    }
+    #box::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+<body>
+    <!-- 兼容所有浏览器的超出部分滚动不显示滚动条 -->
+    <div id="box">
+        <span>file:///Users/vn0e3ud/Project/git</span>
+        <span>/Flutter/PotalPage/scroll.htmlfile:///Users/vn0e3ud/Project/git/Flutter/PotalPage/scroll.htmlfile:///Users/vn0e3ud/Project/git/Flutter/PotalPage/scroll.htmlfile:///Users/vn0e3ud/Project/git/Flutter/PotalPage/scroll.html</span>
+    </div>
+</body>
+</html>

@@ -85,19 +85,26 @@ main select {
 }
 
 .notice-tit{
+  width: 100%;
   height: 30px;
   background-color: #E6E6E6;
   position: relative;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
 }
 .notice-tit ul{
   position: absolute;
-  width: 100%;
+  
   list-style: none;
   font-size:13px;
   font-family:ArialMT;
   font-weight:400;
   background:rgba(230,230,230,1);
 }
+
+/* .notice-tit ul::-webkit-scrollbar {
+  display: none;
+} */
 
 .notice-tit ul li{
   float: left;
