@@ -10,15 +10,21 @@
 { 
   width: 100%; 
   height: 80px; 
-  background: white; 
-  position: relative;
+  background: #1977D3; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 53px;
 }
 
 .logo { 
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 53px;
   width: 105px;
   height: 24px;
 }
@@ -28,10 +34,33 @@
   font-family:Chalkboard;
   font-weight:400;
   color:rgba(40,39,39,1);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 166px;
+  margin-left: 8px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 53px;
+}
+
+.user {
+  width: 8px;
+  height: 13px;
+}
+
+.header-right span {
+  font-size:8px;
+  font-family:ArialMT;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  margin-left: 4px;
+}
+
+.logout {
+  width: 10px;
+  height: 10px;
+  margin-left: 36px;
 }
 
 main {
@@ -145,7 +174,6 @@ main select {
   height: 966px;
   background-color: white;
   margin-bottom: 60px;
-  overflow: hidden;
 }
 
 .notice-con table {
