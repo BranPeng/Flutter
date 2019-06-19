@@ -10,7 +10,7 @@
 { 
   width: 100%; 
   height: 80px; 
-  background: #1977D3; 
+  background: white; 
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,21 +45,21 @@
 }
 
 .user {
-  width: 8px;
-  height: 13px;
+  width: 16px;
+  height: 25px;
 }
 
 .header-right span {
-  font-size:8px;
+  font-size:16px;
   font-family:ArialMT;
   font-weight:400;
-  color:rgba(255,255,255,1);
-  margin-left: 4px;
+  color:rgba(66,66,66,1);
+  margin-left: 8px;
 }
 
 .logout {
-  width: 10px;
-  height: 10px;
+  width: 19px;
+  height: 19px;
   margin-left: 36px;
 }
 
@@ -114,7 +114,6 @@ main select {
 }
 
 .notice-tit{
-  width: 100%;
   height: 30px;
   background-color: #E6E6E6;
   position: relative;
@@ -123,7 +122,7 @@ main select {
 }
 .notice-tit ul{
   position: absolute;
-  
+  width: 100%;
   list-style: none;
   font-size:13px;
   font-family:ArialMT;
@@ -174,6 +173,7 @@ main select {
   height: 966px;
   background-color: white;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .notice-con table {
@@ -240,6 +240,7 @@ main select {
   margin-left: 20px;
   margin-top: 30px;
   display: flex;
+  position:relative;
 }
 
 .screen1-line3 span {
@@ -460,8 +461,8 @@ main select {
   /* border:1px solid #CCCCCC; */
   /* overflow:hidden; 
   box-shadow:inset 0 03px rgba(0,0,0,0.5); */
-  position:relative;
-  margin-left: 74px;
+  position: absolute;
+  margin-left: 148px;
   width:229px;
   height:100px;
   background:rgba(242,242,242,1);
